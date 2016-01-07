@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <% for(var i = 0; i < links.length; i++) { %>
+    <link <% Object.keys(links[i]).forEach(function(key) { %><%= key %>="<%= links[i][key] %>" <% }) %> /><% } %>
+</head>
+<body>
+<div id="app">
+    <h1>The app is working</h1>
+</div>
+
+<% for(var i = 0; i < scripts.length; i++) { %>
+<script <% Object.keys(scripts[i]).forEach(function(key) { %><%= key %>="<%= scripts[i][key] %>" <% }) %> ></script><% } %>
+
+</body>
+</html>

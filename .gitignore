@@ -1,0 +1,40 @@
+# npm ignore
+npm-debug.log
+node_modules
+mocha.json
+coverage
+
+.tmp
+
+# Sublime Text
+*.sublime-workspace
+
+# vim
+*.swp
+
+# kdiff3
+*.orig
+
+# OSX
+Thumbs.db
+.DS_Store
+
+# Packages
+*.jar
+*.zip
+
+# Eclipse files
+*.classpath
+*.project
+*.settings
+.checkstyle
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+/.metadata
+
+#floobits
+.floo
+.flooignore
+

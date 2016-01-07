@@ -1,0 +1,26 @@
+{
+  "presets": ["es2015", "stage-0", "react"],
+  "env": {
+    "development": {
+      "plugins": [
+        ["babel-plugin-module-alias", [
+          { src: "./client/modules", expose: "modules" },
+          { src: "./client/config.prod.js", expose: "config" }
+        ]],
+        ["react-transform", {
+          "transforms": [
+            {
+              "transform": "react-transform-hmr",
+              "imports": ["react"],
+              "locals": ["module"]
+            },
+            {
+              "transform": "react-transform-catch-errors",
+              "imports": ["react", "redbox-react"]
+            }
+          ]
+        }]
+      ]
+    }
+  }
+}

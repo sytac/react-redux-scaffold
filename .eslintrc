@@ -1,0 +1,25 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true,
+    "phantomjs": true,
+    "es6": true
+  },
+  "rules": {
+    "no-use-before-define": 0,
+    "no-console" : 0,
+    "new-cap" : 0,
+    "comma-dangle": [2, "never"],
+    "strict": 0,
+    "max-len": [
+      1,
+      120
+    ],
+    "react/prop-types": 0,
+    "react/jsx-boolean-value": [1, "Always"],
+    "react/no-multi-comp": 0,
+    "react/jsx-no-bind": 0
+  }
+}
