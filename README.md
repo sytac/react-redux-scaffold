@@ -22,7 +22,7 @@ npm start
 
 ### Ok, is working but... I want to start to write my code ASAP
 
-Everithing you need to start to do some experiment and start to write your react app is:
+Everything you need to start to do some experiment and start to write your react app is:
 
 ##### Run the server 
 Open a terminal and in the app folder run:
