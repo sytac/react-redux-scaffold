@@ -2,7 +2,7 @@
 
 module.exports = (options) => {
   const newOptions = require('lodash/object/merge')({
-    'default': 'production',
+    'default': 'development',
     targets: require('path').join(__dirname, 'targets'),
     transformResult: (config, platformTarget) => {
       return () => {

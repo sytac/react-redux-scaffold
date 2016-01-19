@@ -1,6 +1,5 @@
 'use strict';
 const path = require('path');
-
 module.exports = () => {
   return {
     app: {
@@ -14,12 +13,6 @@ module.exports = () => {
       build: path.join(__dirname, '../../../public')
     },
     build: {
-      uglify: {
-        global: true,
-        sourcemap: false,
-        mangle: true,
-        compress: true
-      }
     }
   };
 };

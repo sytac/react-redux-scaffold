@@ -22,7 +22,7 @@ module.exports = (gulp, config) => {
     const browserifyBundle = browserify('client/app.js', {
       cache: {},
       packageCache: {},
-      debug: false
+      debug: true
     });
 
     // Transforms

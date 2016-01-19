@@ -27,8 +27,8 @@ module.exports = (gulp, config) => {
     b.transform({
       global: true
     });
-    if (config.uglify) {
-      b.transform(config.uglify, uglifyify);
+    if (config.build.uglify) {
+      b.transform(config.build.uglify, uglifyify);
     }
 
     externalLibs.map(dep => {

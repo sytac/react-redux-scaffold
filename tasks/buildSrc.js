@@ -19,10 +19,10 @@ module.exports = (gulp, config) => {
     const browserifyBundle = browserify('client/app.js', { debug: false })
       .transform(babelify);
 
+    browserifyBundle.plugin(require('dep-case-verify'));
     browserifyBundle.transform(commonBrowserify.getImportFilter(browserifyBundle));
-
-    if (config.uglify) {
-      browserifyBundle.transform(config.uglify, uglifyify);
+    if (config.build.uglify) {
+      browserifyBundle.transform(config.build.uglify, uglifyify);
     }
 
     commonBrowserify.getExternalLibsSync();

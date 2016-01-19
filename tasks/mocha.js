@@ -13,7 +13,7 @@ module.exports = (gulp) => {
     const mocha = require('gulp-mocha-co');
     const babel = require('babel-register');
 
-    gulp.src(['./tests/helpers/chai.js',
+    gulp.src(['./tests/helpers/plugins.js',
         './client/**/test/*.spec.js',
         './server/**/test/*.spec.js',
         './tests/**/*.spec.js'
