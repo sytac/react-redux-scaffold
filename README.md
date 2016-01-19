@@ -129,4 +129,14 @@ The environments could be changed in the `config/platforms/targets` folder.
  * build/uglify (The uglify params, not uglified if missing)
 
 The babel parameters could be changed in the `.babelrc` file.
+
+
+# In details
+
+## React App
+ 
+## Config
+
+## Bundle
+
  
