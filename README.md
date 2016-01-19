@@ -11,7 +11,7 @@ A React/Redux scaffold project with a nodeJs server and a babel/browserify build
 npm install
 
 # Bundle the client code
-gulp build
+npm run build
 
 # Run the node server
 npm start
