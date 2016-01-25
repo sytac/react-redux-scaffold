@@ -16,7 +16,7 @@
     "console-prefix": "^1.0.0",
     "cookie-parser": "^1.4.0",
     "ejs": "^2.3.4",
-    "express": "^4.13.3",
+    "express": "^4.13.4",
     "history": "^1.17.0",
     "immutable": "^3.7.6",
     "lodash": "^4.0.0",
