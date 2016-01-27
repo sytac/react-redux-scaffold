@@ -15,7 +15,7 @@
     "body-parser": "^1.14.2",
     "console-prefix": "^1.0.0",
     "cookie-parser": "^1.4.0",
-    "ejs": "^2.3.4",
+    "ejs": "^2.4.1",
     "express": "^4.13.3",
     "history": "^1.17.0",
     "immutable": "^3.7.6",
