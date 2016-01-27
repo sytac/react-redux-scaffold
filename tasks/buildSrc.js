@@ -13,32 +13,21 @@ module.exports = (gulp, config) => {
     const babelify = require('babelify');
     const uglifyify = require('uglifyify');
     const vinylSourceStream = require('vinyl-source-stream');
+    const depCaseVerify = require('dep-case-verify');
 
-    const commonBrowserify = require('./common/browserify');
+    const browserifyBundle =
+      browserify('client/app.js', { debug: false })
+        .transform(babelify)
+        .plugin(depCaseVerify);
 
-    const browserifyBundle = browserify('client/app.js', { debug: false })
-      .transform(babelify);
-
-    browserifyBundle.plugin(require('dep-case-verify'));
-    browserifyBundle.transform(commonBrowserify.getImportFilter(browserifyBundle));
     if (config.build.uglify) {
       browserifyBundle.transform(config.build.uglify, uglifyify);
     }
 
-    commonBrowserify.getExternalLibsSync();
-
     browserifyBundle.bundle()
       .pipe(vinylSourceStream('main.js'))
       .pipe(gulp.dest(config.folders.build))
-      .on('end', err => {
-        commonBrowserify.setExternalLibsSync();
-
-        if (err) {
-          done(err);
-        } else {
-          done();
-        }
-      });
+      .on('end', done);
   }
 
   return tasks;

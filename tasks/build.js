@@ -6,7 +6,6 @@ module.exports = () => {
       seq: [
         'css',
         'build-src',
-        'build-libs',
         'copy-html'
       ]
     }

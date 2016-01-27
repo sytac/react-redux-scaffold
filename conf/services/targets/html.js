@@ -12,7 +12,6 @@ var defaultValues = {
     {rel: 'stylesheet', type: 'text/css', href: '/styles.css'}
   ],
   scripts: [
-    {type: 'text/javascript', src: '/libs.js'},
     {type: 'text/javascript', src: '/main.js'}
   ]
 };

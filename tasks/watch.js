@@ -6,7 +6,6 @@ module.exports = () => ({
       'build',
       [
         'watchClient',
-        'watchExternalLibraries',
         'watchPackageJSON',
         'watchBrowserify'
       ]

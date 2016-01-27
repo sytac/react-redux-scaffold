@@ -17,8 +17,6 @@ module.exports = (gulp, config) => {
     const watchify = require('watchify');
     const gutil = require('gulp-util');
 
-    const commonBrowserify = require('./common/browserify');
-
     const browserifyBundle = browserify('client/app.js', {
       cache: {},
       packageCache: {},
@@ -27,7 +25,6 @@ module.exports = (gulp, config) => {
 
     // Transforms
     browserifyBundle.transform(babelify);
-    browserifyBundle.transform(commonBrowserify.getImportFilter(browserifyBundle));
 
     if (config.uglify) {
       browserifyBundle.transform(config.uglify, uglifyify);
@@ -38,8 +35,6 @@ module.exports = (gulp, config) => {
     browserifyBundle.plugin(watchify);
 
     function bundle() {
-      commonBrowserify.getExternalLibsSync();
-
       browserifyBundle.bundle()
         .pipe(vinylSourceStream('main.js'))
         .pipe(gulp.dest(config.folders.build))
@@ -47,8 +42,6 @@ module.exports = (gulp, config) => {
           if (error) {
             console.error(error);
           }
-
-          commonBrowserify.setExternalLibsSync();
         });
     }
 
