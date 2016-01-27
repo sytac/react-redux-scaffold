@@ -20,7 +20,7 @@
     "history": "^1.17.0",
     "immutable": "^3.7.6",
     "lodash": "^4.0.1",
-    "lodash.defaultsdeep": "^4.0.1",
+    "lodash.defaultsdeep": "^4.0.2",
     "morgan": "^1.6.1",
     "platform-config": "^0.1.5",
     "qwest": "^3.0.0",
