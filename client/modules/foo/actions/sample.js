@@ -1,5 +1,3 @@
-import cookie from 'react-cookie';
-
 export function sampleAction() {
   return (dispatch) => {
     dispatch({

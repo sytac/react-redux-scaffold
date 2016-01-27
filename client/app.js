@@ -5,7 +5,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import { Provider } from 'react-redux';
 import { Router } from 'react-router';
-import { syncReduxAndRouter } from 'redux-simple-router';
+import { syncHistory } from 'redux-simple-router';
 
 import { store } from './store';
 import routes from './routes';
@@ -14,7 +14,7 @@ const history = createHistory({
   queryKey: false
 });
 
-syncReduxAndRouter(history, store);
+syncHistory(history);
 
 // Needed befor react 1.0 release
 injectTapEventPlugin();

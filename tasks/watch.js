@@ -1,17 +1,15 @@
 'use strict';
 
-module.exports = () => {
-  return {
-    watch: {
-      seq: [
-        'build',
-        [
-          'watchClient',
-          'watchExternalLibraries',
-          'watchPackageJSON',
-          'watchBrowserify'
-        ]
+module.exports = () => ({
+  watch: {
+    seq: [
+      'build',
+      [
+        'watchClient',
+        'watchExternalLibraries',
+        'watchPackageJSON',
+        'watchBrowserify'
       ]
-    }
-  };
-};
+    ]
+  }
+});

@@ -15,7 +15,7 @@ const servicesObj = {};
 Object.keys(currentServices).forEach(key => {
   servicesObj[key] = currentServices[key].service;
 });
-const config = require('lodash/object/merge')(platforms.current()(options), { services: servicesObj });
+const config = require('lodash').merge(platforms.current()(options), { services: servicesObj });
 
 // load tasks
 var tasksContext = taskLoader.load('./tasks', gulp, config);

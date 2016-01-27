@@ -6,7 +6,7 @@ export function sampleAsyncAction(value) {
     dispatch({
       type: 'FOO:ASYNC_ACTION_START'
     });
-    const url = config.server.url + '/foo?value=' + value;
+    const url = `${config.server.url}/foo?value=${value}`;
     qwest
       .get(url)
       .then(
