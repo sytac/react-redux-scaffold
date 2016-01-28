@@ -16,6 +16,7 @@ module.exports = (gulp, config) => {
     const vinylSourceStream = require('vinyl-source-stream');
     const watchify = require('watchify');
     const gutil = require('gulp-util');
+    const depCaseVerify = require('dep-case-verify');
 
     const browserifyBundle = browserify('client/app.js', {
       cache: {},
@@ -31,6 +32,7 @@ module.exports = (gulp, config) => {
     }
 
     // Plugins
+    browserifyBundle.plugin(depCaseVerify);
     browserifyBundle.plugin(browserifyHMR);
     browserifyBundle.plugin(watchify);
 

@@ -4,7 +4,7 @@ module.exports = (gulp) => {
   const tasks = {
     eslint: {
       fn: eslintTask,
-      help: 'Check the syntax of the code'
+      description: 'Run linting on the project sources.'
     }
   };
 

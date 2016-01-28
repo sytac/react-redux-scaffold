@@ -4,7 +4,7 @@ module.exports = (gulp) => {
   const tasks = {
     mocha: {
       fn: mochaTask,
-      help: 'Run the unit test'
+      description: 'Run the unit test.'
     }
   };
   return tasks;

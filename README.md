@@ -131,12 +131,56 @@ The environments could be changed in the `config/platforms/targets` folder.
 The babel parameters could be changed in the `.babelrc` file.
 
 
-# In details
-
-## React App
- 
 ## Config
+The config is defined in th `config` folder.
+
+The app uses the node modules `platform-config` (https://github.com/sytac/platform-config)
+
+```
+  // The data related to the application
+  app: {
+    name: 'Some application name',
+    title: 'Some application title'
+  },
+  // The server data used in node/express
+  server: {
+    port: 5000
+  },
+  // The folder containing the static files
+  folders: {
+    build: path.join(__dirname, '../../../public')
+  },
+  // The build/bundle parameter
+  build: {
+    uglify: {
+      global: true,
+      sourcemap: false,
+      mangle: true,
+      compress: true
+    }
+  },
+  // Additional services
+  services: {
+    html: {
+      // The list of -link- tags added to the index.html server file 
+      links: [
+        {
+          rel: 'stylesheet',
+          crossorigin: 'anonymous',
+          href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css',
+          integrity: 'sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7'
+        },
+        { rel: 'stylesheet', type: 'text/css', href: '/styles.css' }
+      ],
+      // The list of -scripts- tags added to the index.html server file
+      scripts: [
+        { type: 'text/javascript', src: '/main.js' }
+      ]
+    }
+  }
+```
 
 ## Bundle
+
 
  

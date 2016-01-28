@@ -9,6 +9,7 @@ module.exports = () => ({
         'watchPackageJSON',
         'watchBrowserify'
       ]
-    ]
+    ],
+    description: 'Build the sources and run the watcher with hot reload features.'
   }
 });
