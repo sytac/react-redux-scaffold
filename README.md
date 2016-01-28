@@ -180,7 +180,14 @@ The app uses the node modules `platform-config` (https://github.com/sytac/platfo
   }
 ```
 
-## Bundle
+## Gulp / Bundle
+All the automation are created using Gulp with the task manager module `gulp-commonjs-tasks` (https://github.com/sytac/gulp-commonjs-tasks)
 
+The tasks are placed in `tasks` folder.
 
- 
+Run `gulp help` to see le list of the tasks.
+
+* <b>build</b> Bundle the client package and copy it in the public folder. Run 'npm run build' to prepare a production environment.
+* <b>eslint</b> Run linting on the project sources.
+* <b>mocha</b> Run the unit test.
+* <b>watch</b> Build the sources and run the watcher with hot reload features.
