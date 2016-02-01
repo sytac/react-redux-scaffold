@@ -3,6 +3,8 @@
 ## TLTR
 A React/Redux scaffold project with a nodeJs server and a babel/browserify building system.
 
+** requires node > 5.x **
+
 # Quick Start
 
 ### Just to check that everything is working
