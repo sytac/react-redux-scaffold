@@ -65,7 +65,7 @@
     "gulp-css-globbing": "^0.1.8",
     "gulp-eslint": "^1.1.1",
     "gulp-mocha-co": "^0.4.1-co.3",
-    "gulp-sass": "^2.1.1",
+    "gulp-sass": "^2.2.0",
     "redbox-react": "^1.2.0",
     "rewire": "^2.5.1",
     "sinon": "^1.17.3",
