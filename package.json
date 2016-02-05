@@ -11,7 +11,7 @@
   "author": "Davide Fiorello <davide@codeflyer.com>",
   "license": "ISC",
   "dependencies": {
-    "bluebird": "^3.2.1",
+    "bluebird": "^3.2.2",
     "body-parser": "^1.14.2",
     "console-prefix": "^1.0.0",
     "cookie-parser": "^1.4.0",
