@@ -60,7 +60,7 @@
     "dep-case-verify": "^2.0.0",
     "eslint-config-airbnb": "^4.0.0",
     "eslint-plugin-react": "^3.16.1",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.1",
     "gulp-commonjs-tasks": "^1.2.0",
     "gulp-css-globbing": "^0.1.8",
     "gulp-eslint": "^1.1.1",
