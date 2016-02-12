@@ -42,7 +42,7 @@
     "simple-registry": "^0.2.2"
   },
   "devDependencies": {
-    "babel": "^6.5.1",
+    "babel": "^6.5.2",
     "babel-core": "^6.5.1",
     "babel-eslint": "^4.1.8",
     "babel-plugin-module-alias": "^1.2.0",
