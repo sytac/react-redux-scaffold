@@ -1,22 +1,17 @@
+import 'babel-polyfill';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import createHistory from 'history/lib/createHashHistory';
+
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import { Provider } from 'react-redux';
 import { Router } from 'react-router';
-import { syncHistory } from 'redux-simple-router';
 
-import { store } from './store';
+import { store, history } from './store';
 import routes from './routes';
 
-const history = createHistory({
-  queryKey: false
-});
-
-syncHistory(history);
-
-// Needed befor react 1.0 release
+// Needed before react 1.0 release
 injectTapEventPlugin();
 
 ReactDOM.render(

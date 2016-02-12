@@ -15,7 +15,7 @@
               "expose": "modules"
             },
             {
-              "src": "./client/config.prod.js",
+              "src": "./client/config.dev.js",
               "expose": "config"
             }
           ]

@@ -1,7 +1,14 @@
 import React from 'react';
-import { Jumbotron, Grid, Row, Col } from 'react-bootstrap';
+import { store } from '../../store';
+import { routeActions } from 'react-router-redux';
+import { Jumbotron, Grid, Row, Col, Button } from 'react-bootstrap';
 
 class CreditsPage extends React.Component {
+
+  handleGoToInfo() {
+    store.dispatch(routeActions.replace('/info'));
+  }
+
   render() {
     return (
       <div>
@@ -18,6 +25,7 @@ class CreditsPage extends React.Component {
                   fugiat
                   nulla pariatur. </p>
               </Jumbotron>
+              <Button onClick={this.handleGoToInfo}>Info</Button>
             </Col>
           </Row>
         </Grid>
