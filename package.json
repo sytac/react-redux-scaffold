@@ -24,7 +24,7 @@
     "lodash.defaultsdeep": "^4.1.0",
     "morgan": "^1.6.1",
     "platform-config": "^0.1.5",
-    "qwest": "^4.0.0",
+    "qwest": "^4.2.1",
     "react": "^0.14.7",
     "react-bootstrap": "^0.28.3",
     "react-cookie": "^0.4.3",
