@@ -9,9 +9,9 @@ import CreditsPage from './components/pages/credits';
 export default (
   <Route>
     <Route component={MainLayout}>
-      <Route path="/" component={HomePage}/>
-      <Route path="/info" component={InfoPage}/>
-      <Route path="/credits" component={CreditsPage}/>
+      <Route path="/" component={HomePage} />
+      <Route path="/info" component={InfoPage} />
+      <Route path="/credits" component={CreditsPage} />
     </Route>
   </Route>
 );

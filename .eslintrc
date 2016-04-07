@@ -11,6 +11,7 @@
     "no-use-before-define": 0,
     "no-console": 0,
     "new-cap": 0,
+    "consistent-return": 0,
     "comma-dangle": [
       2,
       "never"
@@ -23,9 +24,10 @@
     "react/prop-types": 0,
     "react/jsx-boolean-value": [
       1,
-      "Always"
+      "always"
     ],
     "react/no-multi-comp": 0,
-    "react/jsx-no-bind": 0
+    "react/jsx-no-bind": 0,
+    "react/prefer-stateless-function": 0
   }
 }
