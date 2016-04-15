@@ -30,7 +30,7 @@
     "react-cookie": "^0.4.3",
     "react-dom": "^0.14.7",
     "react-redux": "^4.4.0",
-    "react-router": "^2.0.0",
+    "react-router": "^2.2.3",
     "react-router-redux": "^4.0.1",
     "react-tap-event-plugin": "^0.2.2",
     "react-transform-catch-errors": "^1.0.2",
