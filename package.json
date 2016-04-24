@@ -58,7 +58,7 @@
     "chai": "^3.5.0",
     "chai-as-promised": "^5.2.0",
     "del": "^2.2.0",
-    "dep-case-verify": "^2.0.0",
+    "dep-case-verify": "^2.1.0",
     "eslint-config-airbnb": "^6.2.0",
     "eslint-plugin-react": "^4.3.0",
     "gulp": "^3.9.1",
