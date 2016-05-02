@@ -69,7 +69,7 @@
     "gulp-sass": "^2.2.0",
     "redbox-react": "^1.2.2",
     "rewire": "^2.5.1",
-    "sinon": "^1.17.3",
+    "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0",
     "uglifyify": "^3.0.1",
     "vinyl-source-stream": "^1.1.0",
