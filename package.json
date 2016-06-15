@@ -71,7 +71,7 @@
     "rewire": "^2.5.1",
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0",
-    "uglifyify": "^3.0.1",
+    "uglifyify": "^3.0.2",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.6.1"
   },
