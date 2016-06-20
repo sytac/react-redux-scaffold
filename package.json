@@ -13,7 +13,7 @@
   "dependencies": {
     "babel-polyfill": "^6.5.0",
     "bluebird": "^3.2.2",
-    "body-parser": "^1.15.0",
+    "body-parser": "^1.15.2",
     "console-prefix": "^1.0.0",
     "cookie-parser": "^1.4.0",
     "ejs": "^2.4.1",
