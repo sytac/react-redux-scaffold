@@ -68,7 +68,7 @@
     "gulp-mocha-co": "^0.4.1-co.3",
     "gulp-sass": "^2.2.0",
     "redbox-react": "^1.2.2",
-    "rewire": "^2.5.1",
+    "rewire": "^2.5.2",
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0",
     "uglifyify": "^3.0.1",
