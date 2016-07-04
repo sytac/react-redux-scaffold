@@ -11,7 +11,7 @@
   "author": "Davide Fiorello <davide@codeflyer.com>",
   "license": "ISC",
   "dependencies": {
-    "babel-polyfill": "^6.5.0",
+    "babel-polyfill": "^6.6.1",
     "bluebird": "^3.2.2",
     "body-parser": "^1.15.0",
     "console-prefix": "^1.0.0",
