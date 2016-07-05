@@ -22,7 +22,7 @@
     "immutable": "^3.7.6",
     "lodash": "^4.3.0",
     "lodash.defaultsdeep": "^4.1.0",
-    "morgan": "^1.6.1",
+    "morgan": "^1.7.0",
     "platform-config": "^0.1.5",
     "qwest": "^4.0.0",
     "react": "^0.14.7",
